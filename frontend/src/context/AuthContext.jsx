@@ -5,7 +5,7 @@ export const AuthDataContext = createContext();
 
 // Provider component
 const AuthContext = ({ children }) => {
-  const serverUrl = "http://localhost:8080";
+  const serverUrl = "https://fixmycity-backend-uxgd.onrender.com";
 
   console.log("Server URL in AuthContext:", serverUrl);
   return (
