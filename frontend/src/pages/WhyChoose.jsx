@@ -34,7 +34,7 @@ const WhyChoose = () => {
     <section className="py-20 bg-[#ebf2f9a2]">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
      <div className='h-[50%] w-[100%]  flex flex-col justify-center items-center'>
-<h1 className='text-5xl font-bold '>How it Works ?</h1>
+<h1 className='text-5xl font-bold '>Why Choose Us ?</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
             Built for citizens, trusted by municipalities, proven to deliver results.
           </p>
