@@ -16,8 +16,8 @@ app.use(cookieParser());
 
 
 app.use(cors({ origin: [
-   "http://localhost:5173",
-   "http://localhost:5174",
+   "https://fixmycity-admin.onrender.com/",
+   "https://fixmycity-1ghy.onrender.com/",
 ],
    credentials: true }));
 
