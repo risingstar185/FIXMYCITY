@@ -33,7 +33,10 @@ const {getCurrentUser}=useContext(UserDataContext);
       );
 
       toast.success("Login Successful");
-getCurrentUser(); // 
+setTimeout(() => {
+  getCurrentUser();
+}, 500);
+
       setEmail("");
       setPassword("");
       
