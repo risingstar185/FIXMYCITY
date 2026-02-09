@@ -40,13 +40,15 @@ export const registerUser = async (req, res) => {
     res.cookie('token', token, {
       httpOnly: true,
       secure: true,
-      sameSite: 'Strict',
+      sameSite: 'none',
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
-      res.cookie("email", email, {
-      httpOnly: true,
-      sameSite: "lax",
-    });
+     res.cookie("email", email, {
+  httpOnly: true,
+  secure: true,
+  sameSite: "None"
+});
+
 
 
     await newUser.save();
@@ -78,7 +80,7 @@ export const loginUser=async(req,res)=>{
     res.cookie('token', token, {
       httpOnly: true,
       secure: true,
-      sameSite: 'Strict',
+      sameSite: 'none',
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
     res.status(200).json({message:"Login successful"}); 
@@ -220,8 +222,8 @@ try {
     // Set cookie
     res.cookie('token', token, {
       httpOnly: true,
-      secure: false,
-      sameSite: 'Strict',
+      secure: true,
+      sameSite: 'none',
       maxAge: 7 * 24 * 60 * 60 * 1000,
     });
 
