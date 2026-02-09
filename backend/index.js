@@ -16,8 +16,8 @@ app.use(cookieParser());
 
 
 app.use(cors({ origin: [
-   "https://fixmycity-admin.onrender.com/",
-   "https://fixmycity-1ghy.onrender.com/",
+   "https://fixmycity-admin.onrender.com",
+   "https://fixmycity-1ghy.onrender.com",
 ],
    credentials: true }));
 
